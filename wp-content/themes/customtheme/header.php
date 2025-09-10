@@ -10,8 +10,17 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
     <div id="wrapper" class="hfeed">
-        <header id="header" role="banner">
-
+        <header class="header wrapper">
+            <div class="header__content wrapper__content">
+                <a class="logo-link" href="/">
+                    <div class="logo-image">CC</div>
+                </a>
+                <nav class="topnav">
+                    <ul class="topnav__links">
+                        <li><a class="topnav__link" href="/blog.html">Articles</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <main id="content" role="main">
