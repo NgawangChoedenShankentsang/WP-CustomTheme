@@ -17,7 +17,7 @@
                 </a>
                 <nav class="topnav">
                     <ul class="topnav__links">
-                        <li><a class="topnav__link" href="/blog.html">Articles</a></li>
+                        <li><a class="topnav__link" href="/articles">Articles</a></li>
                     </ul>
                 </nav>
             </div>
