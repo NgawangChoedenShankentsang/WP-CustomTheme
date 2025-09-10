@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
+
         <section class="articles wrapper">
             <div class="wrapper__content">
 
@@ -9,6 +10,7 @@
 
                 <?php
                 $posts = get_posts(array(
+                    'numberposts'    => -1,
                     'post_type'         => 'post'
                 ));
 
@@ -23,12 +25,16 @@
                                 <a href="<?php the_permalink(); ?>" class="article__link">
                                     <div class="article__title"><?php the_title(); ?></div>
                                 </a>
+
+
                                 <p class="small article__blurb"> <?php the_excerpt(); ?></p>
+
+
                                 <p class="small article__date"><?php echo get_the_date(); ?></p>
                             </article>
 
                         <?php endforeach; ?>
-
+ 
                         <?php wp_reset_postdata(); ?>
                     </div>
                 <?php endif; ?>
